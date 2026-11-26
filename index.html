@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbols</title>
+</head>
+<body>
+    <header class="top-header">
+        <h1 id="main-heading">Futbols</h1>
+        <img src="KITTYCAR-removebg-preview.png" alt="Futbola emblēma" class="round-logo">
+        <nav class="nav-links">
+            <a href="#sakums">Sākums</a>
+            <a href="#jaunumi">Jaunumi</a>
+            <a href="#speles">Spēles</a>
+            <div class="dropdown">
+                <a href="#komanda" class="kom-poga">Komanda</a>
+                <div class="dropdown-contents">
+                    <a href="#uzbruceji">Uzbrucēji</a>
+                    <a href="#aizsargi">Aizsargi</a>
+                    <a href="#vartsargi">Vārtsargi</a>
+                    <a href="#treneri">Treneri</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#futbols">Par futbolu</a>
+                <div class="dropdown-contents">
+                    <a href="#vesture">Vēsture</a>
+                    <a href="#noteikumi">Noteikumi</a>
+                    <a href="#inventars">Inventārs</a>
+                </div>
+            </div>
+            <a href="#par-mums">Par mums</a>
+            <a href="#kontakti">Kontakti</a>
+        </nav>
+    </header>
+
+    <main class="main-part">
+        <div class="main-div tab-section active-tab" id="sakums">
+            <div class="main-text">
+                <h2 id="sakuma-heading">Futbola mājaslapa</h2>
+                <p id="sakuma-text">Laipni lūgti 9. klases datorikas projekta mājaslapā par futbolu. Šeit apkopota informācija par futbola vēsturi, noteikumiem, inventāru, pazīstamiem spēlētājiem, spēļu norisi un datorikas spēles ideju.</p>
+                <div class="quick-links-row">
+                    <a href="#futbols" class="komandas-poga-sakums">Nodaļas par futbolu</a>
+                    <a href="#speles" class="jaunumu-links">Spēles un rezultāti</a>
+                    <a href="#komanda" class="jaunumu-links">Komandas sastāvs</a>
+                </div>
+            </div>
+            <img src="stadium-hero.jpg" alt="Futbola laukums" id="fk-kepas-sakums">
+        </div>
+
+        <section id="sakums-bloki" class="content-sekcija tab-section active-tab">
+            <h2 class="sekcijas-heading">Galvenie satura bloki</h2>
+            <div class="news-grid">
+                <article class="jaunumu-kartina">
+                    <img src="kit-photo.jpg" alt="Futbola formas un aprīkojums">
+                    <h3>Inventārs un aprīkojums</h3>
+                    <p>Pārskats par futbola pamataprīkojumu un aizsargaprīkojumu spēles un treniņu laikā.</p>
+                    <a href="#inventars" class="jaunumu-links">Skatīt 4. nodaļu</a>
+                </article>
+                <article class="jaunumu-kartina">
+                    <img src="match-action.jpg" alt="Futbola spēle laukumā">
+                    <h3>Spēles un norise</h3>
+                    <p>Informācija par spēļu kārtām, rezultātiem, laukumiem un spēles gaitu.</p>
+                    <a href="#speles" class="jaunumu-links">Skatīt spēles</a>
+                </article>
+                <article class="jaunumu-kartina">
+                    <img src="pexels-jordan-coleman-677910618-17896212.png" alt="Treniņu un spēļu laukums">
+                    <h3>Spēles ideja un apraksts</h3>
+                    <p>Kā futbols tiek pārveidots par datorikas spēli, kāds ir tās mērķis un gaita.</p>
+                    <a href="#futbols" class="jaunumu-links">Skatīt projektu</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="jaunumi" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">Jaunumi</h2>
+            <div class="news-grid">
+                <article class="jaunumu-kartina">
+                    <img src="pexels-rdne-7188057.png" alt="Spēļu formas un ekipējums">
+                    <h3>Gatavība jaunajām spēlēm</h3>
+                    <p>Komanda ir sagatavojusi spēļu formas, bumbas un aizsargaprīkojumu nākamajām kārtām.</p>
+                    <a href="#inventars" class="jaunumu-links">Inventārs</a>
+                </article>
+                <article class="jaunumu-kartina">
+                    <img src="match-action.jpg" alt="Spēles moments">
+                    <h3>Rezultatīva spēle pirmajā kārtā</h3>
+                    <p>Pirmajā kārtā reģistrēts rezultāts 3:1 ar aktīvu uzbrukumu un saspēli visas spēles garumā.</p>
+                    <a href="#speles" class="jaunumu-links">Spēļu saraksts</a>
+                </article>
+                <article class="jaunumu-kartina">
+                    <img src="training-pitch.jpg" alt="Treniņu laukums">
+                    <h3>Treniņi un taktiskā sagatavošanās</h3>
+                    <p>Regulāros treniņos tiek pilnveidota piespēļu precizitāte, ātrums un komandas sadarbība.</p>
+                    <a href="#komanda" class="jaunumu-links">Komanda</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="speles" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">Spēles</h2>
+            <div class="speles-josla">
+                <button id="iepriekseja-spele" class="bultina-poga" type="button">&lt;</button>
+                <div class="speles-info">
+                    <p class="liga-nosaukums">Reģionālā līga</p>
+                    <p id="speles-karta">1. kārta</p>
+                    <p id="speles-datums">2026.11.15 | 15:00</p>
+                    <p id="speles-vieta">Centrālais stadions</p>
+                </div>
+                <div class="speles-rezultats">
+                    <div class="komanda-bloks">
+                        <img src="KITTYCAR-removebg-preview.png" alt="Mājas komanda">
+                        <p>Mājas komanda</p>
+                    </div>
+                    <div class="rezultats-skaitli">
+                        <h3 id="rezultats-teksts">3 : 1</h3>
+                        <a href="#jaunumi">Ziņas</a>
+                    </div>
+                    <div class="komanda-bloks">
+                        <img id="pretinieka-logo" src="pretinieku-komanda.png" alt="Viesu komanda 1">
+                        <p id="pretinieka-nosaukums">Viesu komanda 1</p>
+                    </div>
+                </div>
+                <a href="#futbols" class="visi-rezultati-poga">Noteikumi</a>
+                <button id="nakama-spele" class="bultina-poga" type="button">&gt;</button>
+            </div>
+        </section>
+
+        <section id="komanda" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">Komanda</h2>
+
+            <h3 id="uzbruceji" class="pozicijas-heading">Uzbrucēji</h3>
+            <div class="komandas-grid">
+                <div class="speletaja-kartina">
+                    <img src="player-1.jpg" alt="Lionels Mesi">
+                    <h4>#10 Lionels Mesi</h4>
+                    <p>Uzbrucējs</p>
+                </div>
+                <div class="speletaja-kartina">
+                    <img src="player-2.jpg" alt="Krištianu Ronaldu">
+                    <h4>#7 Krištianu Ronaldu</h4>
+                    <p>Uzbrucējs</p>
+                </div>
+            </div>
+
+            <h3 id="aizsargi" class="pozicijas-heading">Aizsargi</h3>
+            <div class="komandas-grid">
+                <div class="speletaja-kartina">
+                    <img src="player-3.jpg" alt="Virdžils van Deiks">
+                    <h4>#4 Virdžils van Deiks</h4>
+                    <p>Aizsargs</p>
+                </div>
+                <div class="speletaja-kartina">
+                    <img src="player-4.jpg" alt="Paolo Maldīni">
+                    <h4>#3 Paolo Maldīni</h4>
+                    <p>Aizsargs</p>
+                </div>
+            </div>
+
+            <h3 id="vartsargi" class="pozicijas-heading">Vārtsargi</h3>
+            <div class="komandas-grid">
+                <div class="speletaja-kartina">
+                    <img src="player-5.jpg" alt="Manuels Neiers">
+                    <h4>#1 Manuels Neiers</h4>
+                    <p>Vārtsargs</p>
+                </div>
+            </div>
+
+            <h3 id="treneri" class="pozicijas-heading">Treneri</h3>
+            <div class="komandas-grid">
+                <div class="speletaja-kartina">
+                    <img src="player-6.jpg" alt="Jirgens Klops">
+                    <h4>Jirgens Klops</h4>
+                    <p>Galvenais treneris</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="futbols" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">1. Ievads</h2>
+            <div class="info-kaste">
+                <p>Futbols ir komandu sporta veids, kurā divas komandas ar bumbu cenšas gūt vārtus pretinieku vārtos. Futbols tika izvēlēts, jo tas ir dinamisks, skaidrs un viegli saprotams spēles formāts, kuru var pārvērst pārskatāmā datorikas projektā.</p>
+            </div>
+
+            <h2 id="vesture" class="sekcijas-heading">2. Vēsture</h2>
+            <div class="info-kaste">
+                <p>Spēles ar bumbu un kājām bija pazīstamas jau senatnē, bet mūsdienu futbola pirmsākumi saistīti ar 19. gadsimta Lielbritāniju. 1863. gadā tika dibināta Futbola asociācija, bet 1904. gadā starptautiskā organizācija FIFA.</p>
+            </div>
+
+            <h2 id="noteikumi" class="sekcijas-heading">3. Noteikumi</h2>
+            <div class="info-kaste">
+                <ul>
+                    <li>Laukumā spēlē divas komandas, katrā līdz 11 spēlētājiem.</li>
+                    <li>Spēle ilgst 90 minūtes, un tā ir sadalīta divos puslaikos pa 45 minūtēm.</li>
+                    <li>Laukuma spēlētāji nedrīkst tīšām spēlēt ar roku, bet vārtsargs drīkst to darīt savā soda laukumā.</li>
+                    <li>Uzvar komanda, kura noteiktajā laikā gūst vairāk vārtu.</li>
+                </ul>
+            </div>
+
+            <h2 id="inventars" class="sekcijas-heading">4. Inventārs un aprīkojums</h2>
+            <div class="info-kaste">
+                <h3 class="pozicijas-heading">4.1. Pamataprīkojums</h3>
+                <ul>
+                    <li>Futbola bumba, vārti ar tīklu, spēļu krekls, šorti, garās zeķes un futbola apavi.</li>
+                </ul>
+                <h3 class="pozicijas-heading">4.2. Aizsargaprīkojums</h3>
+                <ul>
+                    <li>Apakšstilbu sargi un vārtsarga cimdi.</li>
+                </ul>
+            </div>
+
+            <h2 class="sekcijas-heading">5. Slaveni sportisti un sasniegumi</h2>
+            <div class="info-kaste">
+                <p>Starp pazīstamiem futbolistiem minami Pelē, Djego Maradona, Lionels Mesi un Krištianu Ronaldu. Nozīmīgākie turnīri ir FIFA Pasaules kauss, Eiropas čempionāts un UEFA Čempionu līga.</p>
+            </div>
+
+            <h2 class="sekcijas-heading">6. Spēles ideja un mērķis</h2>
+            <div class="info-kaste">
+                <p>Futbols izvēlēts tāpēc, ka tajā ir skaidri noteikumi, uzbrukuma un aizsardzības situācijas un viegli izmērāms rezultāts. Datorikā sporta veids tiek pārveidots par spēli, kurā spēlētājs pieņem lēmumus, cīnās par rezultātu un cenšas pārspēt pretinieku.</p>
+            </div>
+
+            <h2 class="sekcijas-heading">7. Spēles apraksts</h2>
+            <div class="info-kaste">
+                <p>Spēles stāsts balstās uz komandas cīņu laukumā par uzvaru. Spēles gaitā komanda veido uzbrukumus, aizsargā savus vārtus un seko līdzi rezultātam, bet galvenais mērķis ir gūt vairāk vārtu par pretinieku, ievērojot noteikumus.</p>
+            </div>
+
+            <h2 class="sekcijas-heading">8. Attēli un ilustrācijas</h2>
+            <div class="info-kaste">
+                <img src="boots-ball.jpg" alt="Futbola bumba un apavi" class="attels-paraugs">
+                <p class="attela-paraksts"><strong>8.1. Att.</strong> Futbola bumba un apavi.</p>
+
+                <img src="penalty-spot.jpg" alt="Futbola vārti un laukums" class="attels-paraugs">
+                <p class="attela-paraksts"><strong>8.2. Att.</strong> Futbola vārtu un soda laukuma zona.</p>
+            </div>
+        </section>
+
+        <section id="par-mums" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">Par mums</h2>
+            <div class="info-kaste">
+                <p>Mājaslapa izveidota 9. klases datorikas projekta ietvaros par futbolu kā sporta veidu, apkopojot informāciju par noteikumiem, vēsturi, inventāru, spēlētājiem un spēles koncepciju.</p>
+            </div>
+        </section>
+
+        <section id="kontakti" class="content-sekcija tab-section">
+            <h2 class="sekcijas-heading">Kontakti</h2>
+            <div class="info-kaste">
+                <p><strong>Laukums:</strong> Centrālais stadions</p>
+                <p><strong>E-pasts:</strong> info@futbols-projekts.lv</p>
+                <p><strong>Tālrunis:</strong> +371 26 742 067</p>
+                <p><strong>Nodarbības:</strong> Pirmdienās, trešdienās un piektdienās plkst. 17:00</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

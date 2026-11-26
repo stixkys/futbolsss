@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: linear-gradient(to bottom right, pink, purple, black);
+    min-height: 100%;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-header {
+    width: 100%;
+    height: 10vh;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-image: linear-gradient(to bottom right, pink, purple, black);
+    gap: 20px;
+    background-attachment: fixed;
+    border-bottom: 4px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#main-heading {
+    font-size: 34px;
+    font-variant: small-caps;
+    color: white;
+}
+
+.round-logo {
+    height: 125%;
+    max-height: 82px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid black;
+    align-self: flex-start;
+    margin-top: 8px;
+    object-fit: contain;
+    position: relative;
+    z-index: 10;
+    background-image: linear-gradient(to bottom right, pink, purple, black);
+    background-attachment: fixed;
+}
+
+.nav-links {
+    font-size: 20px;
+    padding-right: 30px;
+    display: flex;
+    gap: 22px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: rgb(210, 200, 200);
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: white;
+    transform: scale(1.08);
+    text-shadow: 2px 2px 5px rgb(56, 0, 56);
+}
+
+.main-part {
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.main-div {
+    color: rgb(210, 200, 200);
+    align-items: center;
+    padding: 5%;
+    margin: 5% auto 2%;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    width: 75%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-contents {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(20, 0, 25, 0.96);
+    min-width: 180px;
+    border-radius: 8px;
+    padding: 10px 0;
+    border: 1px solid rgba(235, 0, 164, 0.4);
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 200;
+}
+
+.dropdown:hover .dropdown-contents,
+.dropdown:focus-within .dropdown-contents {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.dropdown-contents a {
+    padding: 10px 18px;
+    font-size: 18px;
+}
+
+.komandas-poga-sakums {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: rgb(235, 0, 164);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.komandas-poga-sakums:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgba(235, 0, 164, 0.65);
+}
+
+#sakuma-heading {
+    font-size: 38px;
+    color: white;
+}
+
+#sakuma-text {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#fk-kepas-sakums {
+    max-height: 45vh;
+    width: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.content-sekcija {
+    width: 75%;
+    margin: 3% auto;
+}
+
+.sekcijas-heading {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.jaunumu-kartina {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(210, 200, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.jaunumu-kartina img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.jaunumu-links {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: rgb(235, 0, 164);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.jaunumu-links:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgba(235, 0, 164, 0.65);
+}
+
+.jaunumu-kartina h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.speles-josla {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+    user-select: none;
+    gap: 15px;
+}
+
+.speles-josla:active {
+    cursor: grabbing;
+}
+
+.speles-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: rgb(210, 200, 200);
+    font-size: 15px;
+}
+
+.liga-nosaukums {
+    color: white;
+    font-weight: bold;
+}
+
+.speles-rezultats {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.komanda-bloks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.komanda-bloks img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.rezultats-skaitli {
+    text-align: center;
+}
+
+.rezultats-skaitli h3 {
+    font-size: 42px;
+    color: white;
+}
+
+.rezultats-skaitli a {
+    color: rgb(255, 85, 190);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.visi-rezultati-poga {
+    padding: 11px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.visi-rezultati-poga:hover {
+    border-color: rgb(235, 0, 164);
+    transform: scale(1.06);
+}
+
+.bultina-poga {
+    background: none;
+    border: none;
+    color: rgb(210, 200, 200);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.2s ease;
+}
+
+.bultina-poga:hover {
+    color: white;
+}
+
+.speles-info, .speles-rezultats {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.spele-animacija-pa-kreisi {
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+.spele-animacija-pa-labi {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.pozicijas-heading {
+    color: rgb(255, 95, 195);
+    font-size: 24px;
+    margin: 22px 0 12px 0;
+}
+
+.komandas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.speletaja-kartina {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(210, 200, 200);
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.speletaja-kartina img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.speletaja-kartina h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info-kaste {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 26px 30px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    color: rgb(215, 205, 205);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 17px;
+    line-height: 1.5;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.info-kaste ul {
+    margin-left: 22px;
+}
+
+.tab-section {
+    display: none;
+}
+
+.tab-section.active-tab {
+    display: block;
+}
+
+#sakums.tab-section.active-tab {
+    display: flex;
+}
+
+.quick-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.attels-paraugs {
+    max-width: 420px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.attela-paraksts {
+    font-size: 14px;
+    color: rgb(195, 185, 185);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+    .top-header {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 12px 15px;
+    }
+    .nav-links {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 17px;
+    }
+    .main-div, .content-sekcija {
+        width: 92%;
+    }
+    .main-div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-text {
+        align-items: center;
+    }
+    .news-grid, .komandas-grid {
+        grid-template-columns: 1fr;
+    }
+    .speles-josla {
+        flex-direction: column;
+        text-align: center;
+    }
+    .speles-rezultats {
+        gap: 18px;
+    }
+}
